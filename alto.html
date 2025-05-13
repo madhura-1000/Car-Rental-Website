@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Maruti-alto - Features & Compatibility</title>
+    <style>
+        /* Reset some basic styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #003366;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .navbar ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .navbar ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .navbar ul li a:hover {
+            color: #ff6347;
+        }
+
+        .section {
+            padding: 30px;
+            margin: 20px auto;
+            max-width: 1100px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2 {
+            color: #003366;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .overview-content {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        
+        .image-container {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center; /* Centers the image horizontally */
+}
+        img {
+            width: 100%;
+            max-width: 500px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .features button {
+            background-color: #003366;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            width: 100%;
+            text-align: left;
+            font-size: 18px;
+            margin-bottom: 5px;
+            cursor: pointer;
+        }
+
+        .features button:hover {
+            background-color: #ff6347;
+        }
+
+        .panel {
+            display: none;
+            padding: 10px;
+            background-color: #f1f1f1;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #003366;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">Maruti-alto</div>
+            <nav>
+                <ul>
+                    <li><a href="#overview">Overview</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#compatibility">Compatibility</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="image-container">
+        <img src="./assets/maruti-alto-silky-silver.jpg" alt="Centered Image">
+    </div>
+    
+    <section id="overview" class="section">
+        <h1>Overview of Maruti-alto</h1>
+        <div class="overview-content">
+            <p> The Maruti Suzuki Alto is one of India’s most popular and affordable hatchbacks, known for its compact size, fuel efficiency, and budget-friendly pricing. Since its launch in 2000, the Alto has been a best-seller in the entry-level car segment, making it a favorite among first-time car buyers. It competes with models like the Renault Kwid and Hyundai Santro.
+
+                The latest-generation Alto features a compact yet modern design, with a bold front grille, swept-back headlights, and a refreshed bumper. The cabin is simple yet functional, offering features like a 7-inch SmartPlay infotainment system with Android Auto and Apple CarPlay, power windows, keyless entry, and ample legroom for a small hatchback.
+                
+                Under the hood, the Alto is powered by a 796cc petrol engine or a 1.0L K-Series engine (in the Alto K10 variant), offering excellent fuel efficiency. It comes with a 5-speed manual transmission and an AMT (Automatic Gear Shift) option for added convenience. A CNG variant is also available for eco-conscious buyers.</p>
+        </div>
+    </section>
+    <section id="features" class="section">
+        <h2>Features</h2>
+        <div class="features">
+            <button class="accordion">Engine & Performance</button>
+            <div class="panel">
+                <ul>
+                    <li>1.2L Petrol Engine</li>
+                    <li>Automatic & Manual Transmission</li>
+                    <li>Best-in-Class Fuel Efficiency</li>
+                </ul>
+            </div>
+
+            <button class="accordion">Interior Features</button>
+            <div class="panel">
+                <ul>
+                    <li>Touchscreen Infotainment System</li>
+                    <li>Push Start Button</li>
+                    <li>Leather Upholstery</li>
+                </ul>
+            </div>
+
+            <button class="accordion">Safety Features</button>
+            <div class="panel">
+                <ul>
+                    <li>Dual Front Airbags</li>
+                    <li>ABS with EBD</li>
+                    <li>Rear Parking Sensors</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="compatibility" class="section">
+        <h2>Compatibility</h2>
+        <p>The hyundai creta is compatible with a wide range of accessories and offers multiple color variants. Additionally, it is available with Android Auto and Apple CarPlay for seamless connectivity.</p>
+        <button id="moreDetails">See More Details</button>
+        <div id="extraDetails" class="hidden">
+            <p>In addition to its tech features, it’s compatible with both manual and automatic driving styles, making it a versatile option for various driving preferences.</p>
+        </div>
+    </section>
+
+    <footer id="contact" class="footer">
+        <p>For more information, visit our <a href="#">official site</a> or <a href="mailto:info@marutidzire.com">contact us</a>.</p>
+    </footer>
+
+    <script>
+        // Accordion functionality for features section
+        document.querySelectorAll(".accordion").forEach(button => {
+            button.addEventListener("click", function() {
+                this.classList.toggle("active");
+                let panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
+        });
+
+        // Toggle extra details in compatibility section
+        document.getElementById("moreDetails").addEventListener("click", function() {
+            let extraDetails = document.getElementById("extraDetails");
+            extraDetails.classList.toggle("hidden");
+            this.textContent = extraDetails.classList.contains("hidden") ? "See More Details" : "See Less";
+        });
+    </script>
+</body>
+</html>   

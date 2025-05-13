@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CarZi</title>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="car.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+
+
+</head>
+
+
+<body>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"
+    integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+  <script defer src="car.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+
+
+  <div class="body_class">
+
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><strong><span>CAR</span>ZI</strong></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-space-between justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item me-3">
+              <a class="nav-link active" aria-current="page" href="#home">Home</a>
+            </li>
+            <li class="nav-item me-3">
+              <a class="nav-link" href="#feature">Features</a>
+            </li>
+            <li class="nav-item me-3">
+              <a class="nav-link" href="#review">Review</a>
+            </li>
+            <li class="nav-item me-3">
+              <a class="nav-link" href="#faq">FAQ</a>
+            </li>
+            <li class="nav-item me-3">
+              <a class="nav-link" href="#aboutus">AboutUS</a>
+            </li>
+          </ul>
+          <div class="btn">
+            <button class="nav_button me-3" onclick="window.location.href='login.php'">LogIn</button>
+            <button class="nav_button">SignIn</button>
+          </div>
+
+        </div>
+      </div>
+    </nav>
+
+
+    <!-- Carousel -->
+    <div class="carousel">
+      <div class="header_img">
+        <img src="assets/carousel1.png" alt="header image">
+        <div class="overlay">
+          <h2>Welcome to Our Website</h2>
+          <a href="#home"><button class="nav_button">Explore More</button></a>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- Modern Marquee Section -->
+    <div class="marquee-container">
+      <div class="marquee-text">
+        🚗 Cars are available at cheap prices! Book now and save big! 🚗
+      </div>
+    </div>
+
+
+
+
+
+    <!-- header home-->
+    <header class="main">
+      <section class="home" id="home">
+
+        <div class="header_container">
+          <div class="header_text">
+            <h1>Car Rental</h1>
+            <h3>Save big With Our Car Rental Services</h3>
+            <p>A car rental website provides a seamless platform for users to browse, book, and manage vehicle rentals.
+              With a user-friendly interface, secure payments, and flexible booking options, it ensures a hassle-free
+              experience. Features like search filters, location services, and customer reviews enhance convenience for
+              travelers and businesses alike.
+            </p>
+
+            <div class="header_button">
+              <a href="#feature"><button class="nav_button">Book Ride</button></a>
+              <a href="#aboutus"><button class="nav_button">Learn More</button></a>
+
+            </div>
+
+          </div>
+
+        </div>
+        <div class="header_img">
+          <img src="assets/car4.jpeg" alt="car img" class="car_img">
+        </div>
+
+
+      </section>
+      <section class="header_form">
+        <form action="/">
+
+          <div class="input_group">
+            <label for="loc_btn">Pick up & return location:</label>
+            <input type="text" id="loc_btn" placeholder="Search location"></input>
+          </div>
+          <div class="input_group">
+            <label for="start">Start:</label>
+            <input type="date" id="start" placeholder=>
+          </div>
+          <div class="input_group">
+            <label for="stop">Stop:</label>
+            <input type="date" id="stop">
+          </div>
+          <div><input type="submit" value="Submit" class="nav_button"></div>
+        </form>
+      </section>
+
+    </header>
+
+    <!-- login -->
+    <!-- <div class="login" id="loginModal">
+      <form action="">
+        <h3>USER LOGIN</h3>
+        <input type="email" placeholder="Email" class="box">
+        <input type="password" placeholder="Password" class="box">
+        <p>Forgot Your Password <a href="">Click here</a></p>
+        <input type="Submit" value="Login now" class="nav_button">
+        <p>or login with</p>
+        <div class="button">
+          <a href="#" class="nav_button">Google</a>
+          <a href="#" class="nav_button">Facebook</a>
+        </div>
+        <p>Dont have account <a href="#">Create one</a></p>
+
+        <div class="closelogin">
+          <button class="nav_button" onclick="closeLogin()">X</button>
+        </div>
+      </form>
+    </div> -->
+
+    <!-- steps -->
+    <div class="steps" id="feature">
+      <div class="steps_text">
+        <p><span>how it works</span></p>
+        <h1><strong>Rent in 4 Easy Steps</strong></h1>
+      </div>
+      <div class="steps_container">
+        <div class="box">
+          <i class="bx bxs-map"></i>
+          <h2>Choose Location</h2>
+          <p>Select the city or rental branch where you want to pick up the car. Some services offer drop-off at a
+            different location for added convenience. Use location services for nearby options.</p>
+        </div>
+
+        <div class="box">
+          <i class='bx bxs-car'></i>
+          <h2>Choose Car</h2>
+          <p>Browse through available vehicles and choose the one that best suits your needs based on budget, size, fuel
+            efficiency, and features. Compare options and select the perfect ride.</p>
+        </div>
+
+        <div class="box">
+          <i class='bx bxs-calendar'></i>
+          <h2>Pick up Date</h2>
+          <p>Select the start date and time for your rental. Ensure it aligns with your travel plans, considering
+            factors like business hours, availability, and any early pickup or late return policies</p>
+        </div>
+
+        <div class="box">
+          <i class='bx bx-check'></i>
+          <h2>Book a Car</h2>
+          <p>Confirm your selection by entering rental details, including dates and personal information. Choose
+            additional services if needed, proceed with secure payment, and receive instant booking confirmation with
+            pickup instructions</p>
+        </div>
+      </div>
+    </div>
+
+
+    <section class="car-availability" id="availability">
+      <div class="container text-center mt-5">
+        <h2 class="section-title">🚗 Available Cars for Rent</h2>
+        <div class="car-slider">
+          <div class="car-list">
+            <!-- Car 1 -->
+            <div class="car-card">
+              <a href="swift.html"> <img src="./assets/swift.png" alt="Swift"> </a>
+              <h5>Swift-Dzire</h5>
+              <p>Price: 900/day</p>
+              <p class="availability text-success">Available ✅</p>
+
+            </div>
+
+            <!-- Car 2 -->
+            <div class="car-card">
+              <a href="creta.html"> <img src="./assets/creta.jpeg" alt="creta"> </a>
+              <h5>Hyndai-creta</h5>
+              <p>Price: 1000/day</p>
+              <p class="availability text-danger">Not Available ❌</p>
+            </div>
+
+            <!-- Car 3 -->
+            <div class="car-card">
+              <a href="honda amaze.html"> <img src="./assets/honda-amaze-2022.jpg" alt="honda-amaze"> </a>
+              <h5>honda-amaze</h5>
+              <p>Price: 800/day</p>
+              <p class="availability text-success">Available ✅</p>
+            </div>
+
+            <!-- Car 4 -->
+            <div class="car-card">
+              <a href="venue.html"> <img src="./assets/venue.jpeg" alt="venue"> </a>
+              <h5>Venue</h5>
+              <p>Price: 900/day</p>
+              <p class="availability text-success">Available ✅</p>
+            </div>
+
+            <!-- Car 5 -->
+            <div class="car-card">
+              <a href="hector.html"> <img src="./assets/20200921114059_Hector-dual-tone-1024x678.jpg" alt="venue"> </a>
+              <h5>Hector-dual-tone</h5>
+              <p>Price: 2000/day</p>
+              <p class="availability text-success">Available ✅</p>
+            </div>
+
+            <!-- Car 6 -->
+            <div class="car-card">
+              <a href="baleno.html"> <img src="./assets/new-maruti-baleno-front-3-quarter-view.jpg" alt="venue"> </a>
+              <h5>Maruti-baleno</h5>
+              <p>Price: 1100/day</p>
+              <p class="availability text-success">Available ✅</p>
+            </div>
+
+            <!-- Car 7 -->
+            <div class="car-card">
+              <a href="alto.html"> <img src="./assets/maruti-alto-silky-silver.jpg" alt="venue"> </a>
+              <h5>Maruti-alto</h5>
+              <p>Price: 800/day</p>
+              <p class="availability text-success">Available ✅</p>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- <div class="license">
+      <form id="licenseCheckForm">
+        <label for="licenseId">Enter License ID Number:</label><br>
+        <input type="text" id="licenseId" name="licenseId" required /><br><br>
+        <button type="submit">Validate</button>
+      </form>
+
+      <div id="validationResult"></div>
+
+    </div> -->
+
+<!-- location -->
+    <div class="loc">
+      <h2><strong>Our Office Location:</strong></h2>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3780.910758805525!2d73.81344497496552!3d18.62308328249047!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b860d63876d1%3A0x9bccd5081468bc36!2sDr.%20D.%20Y.%20Patil%20Institute%20of%20Technology!5e0!3m2!1sen!2sin!4v1744807118703!5m2!1sen!2sin"
+        width="100%" height="200rem" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <section class="review" id="review">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+
+
+      <!-- review -->
+      <div class="review_container">
+        <div class="review_head">
+          <h2><strong>What are the Clients <br>Saying About Us</strong></h2>
+        </div>
+        <div class="review_content swiper mySwiper">
+          <div class="review_box swiper-wrapper">
+            <div class="profile_box swiper-slide">
+              <div class="top_box">
+                <div class="profile_img">
+                  <img src="assets/profile3.jpg" alt="">
+                </div>
+                <div class="profile_text">
+                  <div class="profile_name">
+                    John D.
+                  </div>
+
+                </div>
+              </div>
+              <div class="middle_box">
+                "Fantastic experience! The booking process was seamless, and the car was in excellent condition.
+                Customer service was top-notch—friendly and helpful. Will definitely use this service again!"
+              </div>
+              <div class="bottom_box">
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+              </div>
+            </div>
+            <div class="profile_box swiper-slide">
+              <div class="top_box">
+                <div class="profile_img">
+                  <img src="assets/profile4.jpg" alt="">
+                </div>
+                <div class="profile_text">
+                  <div class="profile_name">
+                    Sarah M.
+                  </div>
+
+                </div>
+              </div>
+              <div class="middle_box">
+                "Highly recommend! The car was clean, well-maintained, and ready on time. The prices were reasonable,
+                and the pickup/drop-off process was super easy. Five stars!"
+              </div>
+              <div class="bottom_box">
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+              </div>
+            </div>
+            <div class="profile_box swiper-slide">
+              <div class="top_box">
+                <div class="profile_img">
+                  <img src="assets/profile5.jpg" alt="">
+                </div>
+                <div class="profile_text">
+                  <div class="profile_name">
+                    Michael R.
+                  </div>
+
+                </div>
+              </div>
+              <div class="middle_box">
+                "One of the best car rental experiences I’ve ever had. The website was user-friendly, and there were no
+                hidden fees. The staff was professional, and the car exceeded my expectations!"
+              </div>
+              <div class="bottom_box">
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+              </div>
+            </div>
+            <div class="profile_box swiper-slide">
+              <div class="top_box">
+                <div class="profile_img">
+                  <img src="assets/profile6.jpg" alt="">
+                </div>
+                <div class="profile_text">
+                  <div class="profile_name">
+                    Lisa K.
+                  </div>
+
+                </div>
+              </div>
+              <div class="middle_box">
+                "Great service! I was able to book a car in minutes, and everything went smoothly. The vehicle was
+                spotless, and the return process was quick. Will rent again soon!"
+              </div>
+              <div class="bottom_box">
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+              </div>
+            </div>
+            <div class="profile_box swiper-slide">
+              <div class="top_box">
+                <div class="profile_img">
+                  <img src="assets/profile7.jpg" alt="">
+                </div>
+                <div class="profile_text">
+                  <div class="profile_name">
+                    David T.
+                  </div>
+
+                </div>
+              </div>
+              <div class="middle_box">
+                "Absolutely amazing! The prices were competitive, the car selection was great, and the entire process
+                was hassle-free. Customer support was responsive and very helpful!"
+              </div>
+              <div class="bottom_box">
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+              </div>
+            </div>
+            <div class="profile_box swiper-slide">
+              <div class="top_box">
+                <div class="profile_img">
+                  <img src="assets/profile8.jpg" alt="">
+                </div>
+                <div class="profile_text">
+                  <div class="profile_name">
+                    Emily W.
+                  </div>
+
+                </div>
+              </div>
+              <div class="middle_box">
+                "Excellent rental service! The car was fuel-efficient, clean, and in perfect condition. I appreciate the
+                transparency in pricing and the ease of extending my rental. Would recommend to anyone!"
+              </div>
+              <div class="bottom_box">
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+              </div>
+            </div>
+            <div class="profile_box swiper-slide">
+              <div class="top_box">
+                <div class="profile_img">
+                  <img src="assets/profile9.jpg" alt="">
+                </div>
+                <div class="profile_text">
+                  <div class="profile_name">
+                    Robert C.
+                  </div>
+
+                </div>
+              </div>
+              <div class="middle_box">
+                "Booking was straightforward, and the car performed perfectly during my trip. Customer service was
+                polite and quick to respond to my questions. A truly reliable car rental company!"
+              </div>
+              <div class="bottom_box">
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+              </div>
+            </div>
+            <div class="profile_box swiper-slide">
+              <div class="top_box">
+                <div class="profile_img">
+                  <img src="assets/profile2.jpg" alt="">
+                </div>
+                <div class="profile_text">
+                  <div class="profile_name">
+                    Jessica B.
+                  </div>
+                </div>
+              </div>
+              <div class="middle_box">
+                "I was impressed with how well-maintained the cars were. No issues at all, and the entire process was
+                hassle-free. Great customer service and affordable rates!"
+              </div>
+              <div class="bottom_box">
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+
+        </div>
+      </div>
+
+    </section>
+
+
+    <section class="sub">
+      <h2>Subscribe to CARzi for Updates</h2>
+      <div class="box">
+        <input type="email" placeholder="Enter Your Email..">
+        <a href="#" class="nav_button">SUBSCRIBE</a>
+      </div>
+    </section>
+
+    <!-- Frequently asked Questions -->
+    <div class="faq" id="faq">
+      <div class="faq_container">
+        <div class="faq_head" data-small-title="frequently asked questions">
+          <h2><strong>Questions that are Always Asked</strong></h2>
+        </div>
+        <div class="sub_title">
+          The FAQ (Frequently Asked Questions) section is designed to provide quick and clear answers to common
+          inquiries.
+        </div>
+        <div class="faq_content">
+
+          <div class="faq_item" id="quest1">
+            <div class="question">
+              <h2>What is the process of renting a car?</h2>
+              <i class='bx bx-caret-down'></i>
+              <div class="answer">Choose a car, provide necessary documents (license & ID), select rental duration, make
+                a payment, and pick up the vehicle.</div>
+            </div>
+          </div>
+
+          <div class="faq_item" id="quest2">
+            <div class="question">
+              <h2>can i rent a car at 18 years old?</h2>
+              <i class='bx bx-caret-down help_btn'></i>
+              <div class="answer">Yes, you can rent a car at 18 in some locations, but there are restrictions. Most
+                rental companies require renters to be at least 21 years old, but some allow 18-year-olds, especially in
+                certain states or for specific vehicle categories.</div>
+            </div>
+          </div>
+          <div class="faq_item" id="quest3">
+            <div class="question">
+              <h2>How can I cancel my reservation?</h2>
+              <i class='bx bx-caret-down help_btn'></i>
+              <div class="answer">You can cancel your reservation by logging into your account on the rental company’s
+                website or contacting customer support. The cancellation policy varies, and fees may apply depending on
+                how close to the pickup date you cancel. Some companies offer free cancellations within a specific
+                timeframe, while others may charge a percentage of the rental fee.</div>
+            </div>
+          </div>
+          <div class="faq_item" id="quest4">
+            <div class="question">
+              <h2>What documents do I need to rent a car?</h2>
+              <i class='bx bx-caret-down help_btn'></i>
+              <div class="answer">A valid driver’s license, government-issued ID/passport, and a credit or debit card
+                for payment.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    
+    <!-- About Us -->
+    <section class="about-section" id="aboutus">
+      <div class="about-text">
+        <h2>About CARzi</h2>
+        <p>At CARzi, we believe in providing top-notch car rental services with affordable prices and convenience.
+          Whether you need a car for a weekend getaway, business trip, or just a ride around the city, we've got you
+          covered.</p>
+        <p>Our fleet consists of a wide range of vehicles, from budget-friendly options to luxury cars, ensuring that
+          you get the perfect ride for your needs.</p>
+        <h3>Why Choose Us?</h3>
+        <ol>
+          <li><i class='bx bx-check-circle'></i> Affordable pricing</li>
+          <li><i class='bx bx-check-circle'></i> Easy online booking</li>
+          <li><i class='bx bx-check-circle'></i> Well-maintained vehicles</li>
+          <li><i class='bx bx-check-circle'></i> 24/7 customer support</li>
+        </ol>
+      </div>
+
+    </section>
+
+
+    <!-- chatbot -->
+    <div class="chatbot-wrapper">
+      <div class="showchatbot">
+        <button class="chatbot-hide">
+          <!-- <span><i class='bx bx-x'></i></span> -->
+          <span><i class='bx bx-chat'></i></span>
+        </button>
+        <div class="chatbot">
+
+          <div class="header">
+            <h2>Chatbot</h2>
+          </div>
+          <ul class="chatbox">
+            <li class="chat incoming">
+              <span><i class='bx bx-bot'></i></span>
+              <p>Hi, how can I assist you today?</p>
+            </li>
+            <!-- <li class="chat outgoing">
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, odio.</p>
+            </li> -->
+          </ul>
+          <div class="chat-input">
+            <textarea placeholder="  Ask Question" name="" id=""></textarea>
+            <span id="send-btn"><i class='bx bx-send'></i></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Footer -->
+    <section class="footer">
+      <div class="container text-center">
+        <p>&copy; 2025 CARZI. All Rights Reserved.</p>
+      </div>
+    </section>
+
+
+
+
+
+
+
+  </div> <!-- bodyclass end -->
+
+
+</body>
+
+</html> 
